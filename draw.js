@@ -6,6 +6,7 @@ let colorButton = document.getElementById("color-input");
 let clearButton = document.getElementById("button-clear");
 let eraseButton = document.getElementById("button-erase");
 let penButton = document.getElementById("button-pen");
+let saveButton = document.getElementById("button-save");
 let penSize = document.getElementById("pen-slider");
 let toolType = document.getElementById("tool-type");
 //eraser = false and drawing=false initially as user hasn't started using both
@@ -123,6 +124,10 @@ backgroundButton.addEventListener("change", () => {
 clearButton.addEventListener("click", () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     canvas.style.backgroundColor = "#fff";
-    backgroundButton.value = "#fff";
+    backgroundButton.value = "#ffffff";
+});
+//Save
+saveButton.addEventListener("click", () => {
+
 });
 window.onload = init();
