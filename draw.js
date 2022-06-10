@@ -35,6 +35,8 @@ const init = () => {
     canvas.style.backgroundColor = "#ffffff";
     backgroundButton.value = "#ffffff";
     penButton.value = context.strokeStyle;
+    context.fillStyle = '#ffffff';
+    context.fillRect(0, 0, canvas.width, canvas.height);
 };
 //Detect touch device
 const is_touch_device = () => {
@@ -60,6 +62,7 @@ const startDrawing = (e) => {
     //drawing = true
     draw_bool = true;
     getXY(e);
+    if (is_touch_device()) e.preventDefault();
     //Start Drawing
     context.beginPath();
     context.moveTo(mouseX, mouseY);
