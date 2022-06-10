@@ -128,6 +128,11 @@ clearButton.addEventListener("click", () => {
 });
 //Save
 saveButton.addEventListener("click", () => {
-
+    let image = canvas.toDataURL("image/png").replace("image/png");
+    let link = document.createElement("a");
+    link.style.display = "none";
+    link.download = "my-drawing.png";
+    link.href = image;
+    link.click();
 });
 window.onload = init();
