@@ -1,0 +1,18 @@
+{
+    "name": "digizarra",
+    "version": "1.0.0",
+    "description": "Notes web app for elementary school, whiteboard and notebook",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Notes",
+        "Whiteboard",
+        "Notebook",
+        "Drawing",
+        "Javascript"
+    ],
+    "author": "",
+    "license": "GPL-3.0-or-later"
+}
