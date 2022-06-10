@@ -1,2 +1,2 @@
 # Digizarra
-Notes app for elementary school, whiteboard and notebook"
+Notes web app for elementary school, whiteboard and notebook"
