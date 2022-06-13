@@ -35,8 +35,7 @@ const init = () => {
     canvas.style.backgroundColor = "#ffffff";
     backgroundButton.value = "#ffffff";
     penButton.value = context.strokeStyle;
-    context.fillStyle = '#ffffff';
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    paintBackground();
 };
 //Detect touch device
 const is_touch_device = () => {
@@ -121,13 +120,17 @@ colorButton.addEventListener("change", () => {
 });
 //Change Background
 backgroundButton.addEventListener("change", () => {
-    canvas.style.backgroundColor = backgroundButton.value;
+    if (confirm("Are you sure you want to change the background? This will erase your current drawing.")) {
+        canvas.style.backgroundColor = backgroundButton.value;
+        paintBackground();
+    }
 });
 //Clear
 clearButton.addEventListener("click", () => {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    canvas.style.backgroundColor = "#fff";
-    backgroundButton.value = "#ffffff";
+    if (confirm("Are you sure you want to clear the canvas? This will erase your current drawing.")) {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        paintBackground();
+    }
 });
 //Save
 saveButton.addEventListener("click", () => {
@@ -138,4 +141,9 @@ saveButton.addEventListener("click", () => {
     link.href = image;
     link.click();
 });
+//Paint background
+const paintBackground = () => {
+    context.fillStyle = canvas.style.backgroundColor;
+    context.fillRect(0, 0, canvas.width, canvas.height);
+}
 window.onload = init();

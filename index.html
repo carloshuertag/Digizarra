@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <link rel="icon" type="image/png" href="files/Favicon.png"/>
-        <title>LOGIN DIGIZARRA</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    </head>
+<html lang="es">
 
-    <body>
-        <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content rounded-4 shadow">
-                <div class="modal-header p-5 pb-4 border-bottom-0">
-                    <!-- <h5 class="modal-title">Modal title</h5> -->
-                    <h2 class="fw-bold mb-0">Registrarse</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-          
-                <div class="modal-body p-5 pt-0">
-                    <form class="">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Correo electrónico</label>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="files/Favicon.png" />
+    <title>Digizarra</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link rel="stylesheet" type="text/css" title="mdb" href="https://mdb-builder.com/api/mdb-ui-kit/MDB5-STANDARD-UI-KIT-Free-3.11.0/css/themes/mdb.dark.5.min.css">
+</head>
+
+<body>
+    <div>
+        <div data-draggable="true" class="" style="position: relative;" draggable="false">
+            <!---->
+            <!---->
+            <section draggable="false" class="overflow-hidden pt-0" data-v-271253ee="">
+                <section class="mb-10 position-relative">
+                    <!-- SVG Background --><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="svg position-absolute d-none d-lg-block" style="height: 560px; width: 100%; z-index: 0; overflow: hidden">
+                        <defs>
+                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                <stop stop-color="hsl(217, 102%, 99%)" offset="0%"></stop>
+                                <stop stop-color="hsl(217,88%, 93%)" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#sw-gradient-0)"
+                            d="M 0.351 264.418 C 0.351 264.418 33.396 268.165 47.112 270.128 C 265.033 301.319 477.487 325.608 614.827 237.124 C 713.575 173.504 692.613 144.116 805.776 87.876 C 942.649 19.853 1317.845 20.149 1440.003 23.965 C 1466.069 24.779 1440.135 24.024 1440.135 24.024 L 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L 0.351 264.418 Z">
+                        </path>
+                    </svg>
+                    <!-- Content -->
+                    <div class="px-4 py-5 px-md-5 text-center text-lg-start">
+                        <div class="container">
+                            <div class="row gx-lg-5 align-items-center">
+                                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 1">
+                                    <h1 class="my-5 display-3 text-black fw-bold ls-tight"> <span data-builder-edit="text" data-builder-name="text1">Uniendo</span> <br> <span class="text-primary" data-builder-edit="text" data-builder-name="text2">Ambos mundos</span>
+                                    </h1>
+                                    <a class="btn btn-primary btn-lg py-3 px-5 me-md-2 mb-3" href="signup.html" role="button" data-builder-edit="button" data-builder-name="button1" aria-controls="#picker-editor" draggable="false" style="min-width: auto;">Registrarme</a>                                    <a class="btn btn-link btn-lg py-3 px-5 mb-3 ripple-surface-primary" data-ripple-color="primary" href="#" role="button" data-builder-edit="button" data-builder-name="button2" aria-controls="#picker-editor" draggable="false"
+                                        style="min-width: auto;">acceder</a>
+                                </div>
+                                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 1"> <img src="https://images.unsplash.com/photo-1525255946160-aac47911684e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDl8fGJvYXJkfGVufDB8fHx8MTY1NTEwNDc3Ng&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
+                                        class="w-100 rounded-4 shadow-5" alt="logo" data-builder-edit="image" data-builder-name="image1" aria-controls="#picker-editor" draggable="false">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Contraseña</label>
+                </section>
+            </section>
+            <!---->
+        </div>
+        <div data-draggable="true" class="" style="position: relative;">
+            <!---->
+            <!---->
+            <section draggable="false" class="container pt-5" data-v-271253ee="">
+                <section class="mb-10 text-center">
+                    <h2 class="fw-bold mb-9 text-center" data-builder-edit="text" data-builder-name="text1">Why is it so great?</h2>
+                    <div class="row gx-lg-5">
+                        <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
+                            <div class="card shadow-2-strong h-100">
+                                <div class="d-flex justify-content-center" style="margin-top: -43px">
+                                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"> <i class="fas fa-headset fa-4x text-white" data-builder-edit="icon" data-builder-name="icon1" aria-controls="#picker-editor"></i> </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title" data-builder-edit="text" data-builder-name="text2">Pizarra Digital</h5>
+                                    <p class="card-text" data-builder-edit="text" data-builder-name="text3">Todas las ventajas de las pizarras tradicionales, ahora también con las nuevas posibilidades de dibujo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-8 mb-lg-0">
+                            <div class="card shadow-2-strong h-100">
+                                <div class="d-flex justify-content-center" style="margin-top: -43px">
+                                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"> <i class="fas fa-shield-alt fa-4x text-white" data-builder-edit="icon" data-builder-name="icon2" aria-controls="#picker-editor"></i> </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title" data-builder-edit="text" data-builder-name="text4">Libreta digital</h5>
+                                    <p class="card-text" data-builder-edit="text" data-builder-name="text5">Una de las mejores estrategias de aprendizaje, con todas las características de la pizarra, también disponible para los alumnos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-8 mb-lg-0">
+                            <div class="card shadow-2-strong h-100">
+                                <div class="d-flex justify-content-center" style="margin-top: -43px">
+                                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"> <i class="fas fa-rocket fa-4x text-white" data-builder-edit="icon" data-builder-name="icon3" aria-controls="#picker-editor"></i> </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title" data-builder-edit="text" data-builder-name="text6">Pase de lista inteligente</h5>
+                                    <p class="card-text" data-builder-edit="text" data-builder-name="text7">No más tiempo perdido en tomar asistencia, registro del tiempo en su libreta y consulta de las notas de los alumnos automática.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Registrarse</button>
-                    <small class="text-muted">Al registrarse aceptas los términos y condiciones.</small>
-                    <hr class="my-4">
-                    <h2 class="fs-5 fw-bold mb-3">O registrese con:</h2>
-                    <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
-                        Registrese con Twitter
-                    </button>
-                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
-                        Registrese con Facebook
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+                </section>
+            </section>
+            <!---->
+        </div>
+        <div data-draggable="true" class="" style="position: relative;">
+            <!---->
+            <!---->
+            <section draggable="false" class="container pt-5" data-v-271253ee="">
+                <section class="mb-10 text-center text-md-start">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <h2 class="fw-bold"> <span data-builder-edit="text" data-builder-name="text1">Contáctanos</span> <br> <span class="text-primary" data-builder-edit="text" data-builder-name="text2">Búscanos en redes sociales</span>
+                                    </h2>
+                                </div>
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <!-- Facebook -->
+                                    <a class="btn btn-primary btn-floating me-2" style="background-color: #3b5998" href="#!" role="button"> <i class="fab fa-facebook-f" data-builder-edit="icon" data-builder-name="icon1" aria-controls="#picker-editor"></i> </a>
+                                    <!-- Twitter -->
+                                    <a class="btn btn-primary btn-floating me-2" style="background-color: #55acee" href="#!" role="button"> <i class="fab fa-twitter" data-builder-edit="icon" data-builder-name="icon2" aria-controls="#picker-editor"></i> </a>
+                                    <!-- Instagram -->
+                                    <a class="btn btn-primary btn-floating me-2" style="background-color: #ac2bac" href="#!" role="button"> <i class="fab fa-instagram" data-builder-edit="icon" data-builder-name="icon4" aria-controls="#picker-editor"></i> </a>
+                                    <!-- Linkedin -->
+                                    <a class="btn btn-primary btn-floating me-2" style="background-color: #0082ca" href="#!" role="button"> <i class="fab fa-linkedin-in" data-builder-edit="icon" data-builder-name="icon5" aria-controls="#picker-editor"></i> </a>
+                                    <!-- Pinterest -->
+                                    <a class="btn btn-primary btn-floating" style="background-color: #c61118" href="#!" role="button"> <i class="fab fa-pinterest" data-builder-edit="icon" data-builder-name="icon6" aria-controls="#picker-editor"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!---->
+        </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+</body>
 
 </html>
